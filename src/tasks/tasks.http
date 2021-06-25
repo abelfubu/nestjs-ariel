@@ -1,0 +1,30 @@
+@url = http://localhost:3000/tasks
+
+###
+GET {{url}}
+
+###
+POST {{url}}
+Content-Type: application/json
+
+{
+  "title": "abelfubu",
+  "description": "123456",
+  "status": "OPEN"
+}
+
+###
+GET {{url}}/28939333-bc31-4da8-ab5f-8cf56a3a9dba
+
+###
+DELETE {{url}}/28939333-bc31-4da8-ab5f-8cf56a3a9dba
+
+###
+PATCH {{url}}/9413464b-432c-472e-8d4f-13a16b2b1199
+Content-Type: application/json
+
+{
+  "title": "Updated task",
+  "description": "Some description",
+  "status": "DONE"
+}

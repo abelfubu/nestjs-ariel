@@ -1,0 +1,32 @@
+@url = http://localhost:3000/auth
+
+###
+POST {{url}}/signup
+Content-Type: application/json
+
+{
+  "username": "test",
+  "password": "P@ssword!"
+}
+###
+
+POST {{url}}/signin
+Content-Type: application/json
+
+{
+  "username": "test",
+  "password": "P@ssword!"
+}
+
+###
+DELETE {{url}}/4
+
+###
+PATCH {{url}}/2
+Content-Type: application/json
+
+{
+  "title": "Updated task",
+  "description": "Some description",
+  "status": "DONE"
+}
